@@ -1,765 +1,84 @@
-
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-
-
-<!-- Start Head -->
-
+<html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="text" content="">
-	<meta name="author" content="">
+<style>
+body {
+  background-image: url("https://media.tenor.com/images/a1505c6e6d37aa2b7c5953741c0177dc/tenor.gif");
+}
 
-	<!-- description -->
-	<meta name="description" content="UHS Robotics is a highly successful robotics team from Unionville High School located in Markham, Ontario, Canada. Our mission is to spark youth's interest in STEM and robotics.">
-	<!-- keywords -->
-	<meta name="keywords" content="Robotics, Markham, Unionville, 7721, 849, wolfpack, Canada, FIRST">
+h1 {
+  color: white;
+  font-size: 80px;
+}
+  
+h2 {
+  color: white;
+  font-size: 80px;
+  text-align: center;
+}
 
-	<title>Team 7721/849 | UHS Robotics Overview</title>
+p {
+  color: white;
+  font-family: verdana;
+  font-size: 35px;
+}
 
-	<!-- Start Favicon -->
-	<link rel="shortcut icon" href="images/logo/wolf-favicon.ico">
-	<link rel="icon" href="images/logo/wolf-favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-	<!-- END Favicon -->
+a:link, a:visited {
+  border-radius: 50px;
+  background-color: white;
+  color: black;
+  padding: 20px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 35px;
+  
+  
+}
 
-	<!-- Hack to fix weird animation&white flash onload -->
-	<link rel="stylesheet" href="css/preload.css" />
-
-	<!-- Uikit Framework -->
-	<link rel="stylesheet" href="css/uikit.min.css" media="print" onload="this.media='all'" />
-
-	<!-- Bootstrap Framework -->
-	<link rel="stylesheet" href="css/bootstrap.min.css" />
-
-	<!-- Font Awesome -->
-	<script src="https://kit.fontawesome.com/b9dbf42872.js" crossorigin="anonymous"></script>
-
-	<!-- Main Stylesheet -->
-	<link rel="stylesheet" href="css/style.css" />
-
-	<!-- Responsive -->
-	<link rel="stylesheet" href="css/responsive.css" media="print" onload="this.media='all'">
-
-	<!-- Google Fonts -->
-	<link
-		href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800;900&family=Raleway:wght@300;400;500;800;900&family=Roboto:wght@100;300;400;500;900&display=swap"
-		rel="stylesheet" media="print" onload="this.media='all'">
-
-	<!-- Fonts that are visible at the top of the page loads first -->
-	<link
-		href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Raleway:wght@600;700&family=Roboto:wght@300;700&family=Roboto+Mono:wght@300&display=swap"
-		rel="stylesheet">
-
-
-	<!--[if lt IE 9]>
-		  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
-
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169776504-1"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-
-			gtag('config', 'UA-169776504-1');
-		</script>
+a:hover, a:active {
+  background-color: transparent;
+}
+  
+p:empty {
+  width: 100px;
+  height: 20px;
+  background: transparent;
+}
+  
+iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+  
+img {
+  display: block;
+  margin-left: auto;
+}
+  
+</style>
 </head>
-<!-- End Head -->
-
-
-
-<!-- Main Body -->
-
-<body class="preload" data-spy="scroll" data-target="#nav-placeholder" data-offset="300">
-
-	<!-- Return to top button -->
-	<a href="javascript:" id="return-to-top"><svg class="bi bi-arrow-up-short" width="1em" height="1em"
-			viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-			<path fill-rule="evenodd" d="M8 5.5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V6a.5.5 0 01.5-.5z" clip-rule="evenodd" />
-			<path fill-rule="evenodd"
-				d="M7.646 4.646a.5.5 0 01.708 0l3 3a.5.5 0 01-.708.708L8 5.707 5.354 8.354a.5.5 0 11-.708-.708l3-3z"
-				clip-rule="evenodd" />
-		</svg></a>
-
-
-	<!--Navigation bar-->
-	<!-- The contents of the navbar are in nav.html -->
-	<nav id="nav-placeholder" class="navbar navbar-expand-md navbar-dark fixed-top">
-	</nav>
-
-
-	<!-- Landing -->
-	<div id="top">
-		<div class="landing">
-			<video autoplay muted loop id="landing-video">
-				<source src="assets/LandingVideo.mp4" type="video/mp4" />
-			</video>
-			<div class="landing-content-holder">
-				<div class="landing-content">
-					<div class="title-holder">
-						<h1>U<span class="minor">nionville</span> <br class="display-none-pc">H<span class="minor">igh</span> S<span
-								class="minor">chool</span><br>Robotics</h1>
-						<h5>FRC 7721/849</h5>
-						<a class="btn btn-large btn-white border-radius-50" href="https://classroom.google.com/c/MjAzNjMxNzg5MTgw?cjc=dxnzqzd">Join
-							Us</a>
-					</div>
-					<img src="images/logo/landing-logo.png" />
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End Landing -->
-
-	<div class="content z-index-5">
-		<div id="about" class="about-section">
-			<div class="container-fluid">
-				<!-- Row -->
-				<div class="row" data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 50;">
-					<!-- Column -->
-					<div class="col center-col margin-auto">
-						<h1 class="section-title">About Us</h1>
-					</div>
-				</div>
-
-				<div class="separator">
-				</div>
-
-				<div class="row" data-uk-scrollspy="cls: uk-animation-slide-top-medium; delay: 300;">
-					<div class="about-us-description">
-						<p><b>UHS
-								Wolfpack</b> is
-							a highly successful robotics team from Unionville High School (UHS) situated in the town of Unionville,
-							Ontario. Ever since the team’s inception in 1994, we have exemplified proficiency and achievement in the
-							field of robotics, winning numerous awards including the <b>Canadian Robotics 1st Place President's
-								Award</b> and
-							<b>Best Videography Award</b>.
-						</p>
-						<p>As one of the earliest teams from
-							the York Region District School Board to
-							participate in the <b>FIRST Robotics Competition (FRC)</b>, our team has pioneered our school and
-							community’s
-							involvement in the Science, Technology, Engineering, Arts, and Mathematics (STEAM) fields.</p>
-					</div>
-				</div>
-
-				<div class="row" data-uk-scrollspy="cls: uk-animation-slide-top-medium; delay: 300;">
-					<div class="about-us-video">
-						<iframe width="500" height="315" src="https://www.youtube.com/embed/RwXZ5HrqGFo" frameborder="0"
-							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="facts-background">
-			<div id="facts" class="facts-section" data-uk-scrollspy="cls: uk-animation-fade; delay: 75; target: > div;">
-				<h2 class="section-title">Quick Facts</h2>
-				<div class="comp-desc">
-					<h6>We have competed in <b>Canada FIRST</b>, <b>FIRST Robotics competition</b>, <b>VEX Robotics
-							Competition</b>, <b>FIRST Tech Challenge</b>, <b>Skills
-							Ontario</b> and <b>York Region Skills Challenge</b>.</h6>
-				</div>
-
-				<div class="circle-row" data-uk-scrollspy="cls: uk-animation-slide-top-medium; delay: 100; target: > div;">
-					<div class="circle">
-						<h4>150+</h4>
-						<h5>Members</h5>
-					</div>
-
-
-					<div class="circle">
-						<h4>26</h4>
-						<h5>Years</h5>
-					</div>
-
-
-					<div class="circle">
-						<h4>10+</h4>
-						<h5>Awards</h5>
-					</div>
-
-
-					<div class="circle">
-						<h4>5+</h4>
-						<h5>Outreach events<br>per year</h5>
-					</div>
-				</div>
-
-				<div class="timeline">
-					<div class="horizontal-line">
-
-						<div class="timeline-event frc">
-							<div class="timeline-circle" data-uk-scrollspy="cls: timeline-circle-animation; delay: 300;"></div>
-							<h1 class="timeline-year start" data-uk-scrollspy="cls: timeline-year-animation; delay: 1100;">1994</h1>
-							<h2 class="timeline-desc" data-uk-scrollspy="cls: timeline-desc-animation; delay: 1450;">FRC as team <span class="number">849</span></h2>
-							<h2 class="timeline-desc mobile" data-uk-scrollspy="cls: timeline-desc-animation; delay: 1450;">Team <span class="number"></span>849</span></h2>
-							<div class="timeline-circle end" data-uk-scrollspy="cls: timeline-circle-animation; delay: 400;"></div>
-							<h1 class="timeline-year end" data-uk-scrollspy="cls: timeline-year-animation; delay: 1150;">2007</h1>
-							<div class="horizontal-line" data-uk-scrollspy="cls: timeline-line-animation; delay: 300;"></div>
-						</div>
-
-						<div class="timeline-event ftc">
-							<h2 class="timeline-desc" data-uk-scrollspy="cls: timeline-desc-animation; delay: 1500;">FTC</h2>
-							<h2 class="timeline-desc mobile" data-uk-scrollspy="cls: timeline-desc-animation; delay: 1500;">FTC</h2>
-							
-						</div>
-
-						<div class="timeline-event vex">
-							<div class="timeline-circle" data-uk-scrollspy="cls: timeline-circle-animation; delay: 500;"></div>
-							<h1 class="timeline-year start" data-uk-scrollspy="cls: timeline-year-animation; delay: 1200;">2009</h1>
-							<h2 class="timeline-desc" data-uk-scrollspy="cls: timeline-desc-animation; delay: 1550;">VRC</h2>
-							<h2 class="timeline-desc mobile" data-uk-scrollspy="cls: timeline-desc-animation; delay: 1550;">VRC</h2>
-							<div class="timeline-circle end" data-uk-scrollspy="cls: timeline-circle-animation; delay: 600;"></div>
-							<h1 class="timeline-year end" data-uk-scrollspy="cls: timeline-year-animation; delay: 1250;">2014</h1>
-							<div class="horizontal-line" data-uk-scrollspy="cls: timeline-line-animation; delay: 500;"></div>
-						</div>
-
-						<div class="timeline-event now">
-							<div class="timeline-circle" data-uk-scrollspy="cls: timeline-circle-animation; delay: 700;"></div>
-							<h1 class="timeline-year start" data-uk-scrollspy="cls: timeline-year-animation; delay: 1300;">2018</h1>
-							<h2 class="timeline-desc" data-uk-scrollspy="cls: timeline-desc-animation; delay: 1650;">FRC as team <span class="number">7721</span></h2>
-							<h2 class="timeline-desc mobile" data-uk-scrollspy="cls: timeline-desc-animation; delay: 1650;">Team <span class="number">7721</span></h2>
-							<div class="timeline-circle end" data-uk-scrollspy="cls: timeline-circle-animation; delay: 800;"></div>
-							<h1 class="timeline-year end" data-uk-scrollspy="cls: timeline-year-animation; delay: 1350;">2020</h1>
-							<div class="horizontal-line" data-uk-scrollspy="cls: timeline-line-animation; delay: 700;"></div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-		<div class="what-we-do-section">
-			<div class="container">
-				<div class="row" data-uk-scrollspy="cls: uk-animation-fade; delay: 100;">
-					<div class="col center-col margin-auto">
-						<h3 class="section-title">What We Do</h3>
-					</div>
-				</div>
-				<div class="row things-list">
-					<div class="col-md-4 col-sm-6 col-6">
-						<i class="icon fas fa-screwdriver"></i>
-						<h6>
-							Building
-						</h6>
-						<p>
-							We build a large robot every year, some taller than any of us! Depending on the year’s FRC game, they have a variety of abilities, such as climbing walls, shooting balls, etc.
-						</p>
-					</div>
-					<div class="col-md-4 col-sm-6 col-6">
-						<i class="icon fas fa-terminal"></i>
-						<h6>
-							Programming
-						</h6>
-						<p>
-							We code and create autonomous routines to make the robot come to life in unique and efficient ways. We also code to improve the driver's experience by automating certain tasks such as targeting.
-						</p>
-					</div>
-					<div class="col-md-4 col-sm-6 col-6">
-						<i class="icon fas fa-cube"></i>
-						<h6>
-							Design & CAD
-						</h6>
-						<p>
-							We create designs of our future robot using professional software such as Solidworks, then machine parts of it using CAD tools such as 3D Printers and CNCs.
-						</p>
-					</div>
-					<div class="col-md-4 col-sm-6 col-6">
-						<i class="icon far fa-address-card"></i>
-						<h6>
-							PR & Outreach
-						</h6>
-						<p>
-							We recruit students and sponsors in the local community and share the team's activities with the rest of the world through social media.
-						</p>
-					</div>
-					<div class="col-md-4 col-sm-6 col-6">
-						<i class="icon fas fa-microphone"></i>
-						<h6>
-							Public Speaking
-						</h6>
-						<p>
-							We present the team's successes in front of other students, parents, and sponsors to further the team's growth and promote the importance of STEM education.
-						</p>
-					</div>
-					<div class="col-md-4 col-sm-6 col-6">
-						<i class="icon fas fa-photo-video"></i>
-						<h6>
-							Media
-						</h6>
-						<p>
-							We capture our team's work and spirit using professional equipment and software. This has proven to be very effective at promoting ourselves and the joy of solving real world problems in FRC.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="news-section">
-			<div class="container-fluid">
-				<div id="events" class="row" data-uk-scrollspy="cls: uk-animation-fade; delay: 100;">
-					<div class="col center-col margin-auto">
-						<h3 class="section-title">What We Did</h3>
-					</div>
-				</div>
-
-				<!--Start Slideshow -->
-				<div class="row">
-					<div id="events-slides" class="carousel slide margin-bottom-25px" data-ride="carousel"
-						data-uk-scrollspy="cls: uk-animation-fade; delay: 100;">
-						<!-- Images for lazy loading purposes -->
-						<img class="load-early lozad" data-src="images/events/mayfair-vignette.jpg" alt="mayfair">
-						<img class="load-early lozad" data-src="images/events/first_meeting-vignette.jpg" alt="first_meeting">
-						<img class="load-early lozad" data-src="images/events/eggtarts-vignette.jpg" alt="eggtarts">
-						<img class="load-early lozad" data-src="images/events/elementary-school-3by2-vignette.jpg" alt="eggtarts">
-						<img class="load-early lozad" data-src="images/events/durham-vignette.jpg" alt="team">
-						<ol class="carousel-indicators">
-							<li data-target="#events-slides" data-slide-to="0" class="active"></li>
-							<li data-target="#events-slides" data-slide-to="1"></li>
-							<li data-target="#events-slides" data-slide-to="2"></li>
-							<li data-target="#events-slides" data-slide-to="3"></li>
-							<li data-target="#events-slides" data-slide-to="4"></li>
-						</ol>
-						<div class="carousel-inner">
-							<div class="carousel-item active">
-								<img class="d-block w-100 lozad" data-src="images/events/durham-vignette.jpg" alt="team">
-								<div class="carousel-caption d-block">
-									<h4>Durham College 2020</h4>
-									<p>We kicked off our first competition of the season at Durham College and competed against over 30
-										teams from all over Canada!</p>
-								</div>
-							</div>
-							<div class="carousel-item">
-								<img class="d-block w-100 lozad" data-src="images/events/elementary-school-3by2-vignette.jpg" alt="STEM outreach">
-								<div class="carousel-caption d-block">
-									<h4>STEM outreach</h4>
-									<p>We went to local elementary schools to promote our school's STEM program, opportunities in the STEM industries and FIRST Robotics Competition. We brought our robot along with us to show to the students who seemed very interested and eager to learn more.</p>
-								</div>
-							</div>
-							<div class="carousel-item">
-								<img class="d-block w-100 lozad" data-src="images/events/eggtarts-vignette.jpg" alt="eggtarts">
-								<div class="carousel-caption d-block">
-									<h4>Autumnsfest 2019</h4>
-									<p>We sold eggtarts to the student body and the community to promote STEM education and our team!</p>
-								</div>
-							</div>
-							<div class="carousel-item">
-								<img class="d-block w-100 lozad" data-src="images/events/first_meeting-vignette.jpg"
-									alt="first_meeting">
-								<div class="carousel-caption d-block">
-									<h4>First Meeting September 2019</h4>
-									<p>We introduced over 100 new members from our school to robotics and showed them ways they can use
-										their skills (non-technical and/or technical) to contribute to the team!</p>
-								</div>
-							</div>
-							<div class="carousel-item">
-								<img class="d-block w-100 lozad" data-src="images/events/mayfair-vignette.jpg" alt="mayfair">
-								<div class="carousel-caption d-block">
-									<h4>Mayfair 2019</h4>
-									<p>During Unionville High School's annual Mayfair, we sold curry balls to raise awareness of the
-										importance of STEM education and introduced future members to our team!</p>
-								</div>
-							</div>
-						</div>
-						<a class="carousel-control-prev" href="#events-slides" role="button" data-slide="prev">
-							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="sr-only">Previous</span>
-						</a>
-						<a class="carousel-control-next" href="#events-slides" role="button" data-slide="next">
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="sr-only">Next</span>
-						</a>
-						<img class="load-early lozad" data-src="images/events/mayfair-vignette.jpg" alt="mayfair">
-						<img class="load-early lozad" data-src="images/events/first_meeting-vignette.jpg" alt="first_meeting">
-						<img class="load-early lozad" data-src="images/events/eggtarts-vignette.jpg" alt="eggtarts">
-						<img class="load-early lozad" data-src="images/events/durham-vignette.jpg" alt="team">
-					</div>
-					<div id="events-slides-mobile" class="carousel slide margin-bottom-40px" data-ride="carousel"
-						data-uk-scrollspy="cls: uk-animation-fade; delay: 100;">
-						<!-- Images for lazy loading purposes -->
-						<img class="load-early lozad" data-src="images/events/durham-compressed-vignette.jpg" alt="mayfair">
-						<img class="load-early lozad" data-src="images/events/first_meeting-compressed.jpg" alt="first_meeting">
-						<img class="load-early lozad" data-src="images/events/eggtarts-compressed.jpg" alt="eggtarts">
-						<img class="load-early lozad" data-src="images/events/mayfair-compressed.jpg" alt="team">
-						<ol class="carousel-indicators">
-							<li data-target="#events-slides-mobile" data-slide-to="0" class="active"></li>
-							<li data-target="#events-slides-mobile" data-slide-to="1"></li>
-							<li data-target="#events-slides-mobile" data-slide-to="2"></li>
-							<li data-target="#events-slides-mobile" data-slide-to="3"></li>
-							<li data-target="#events-slides-mobile" data-slide-to="4"></li>
-						</ol>
-						<div class="carousel-inner">
-							<div class="carousel-item active">
-								<div class="card w-100">
-									<img class="card-img-top lozad" data-src="images/events/durham-compressed-vignette.jpg" alt="team">
-									<div class="card-body">
-										<h4 class="card-title">Durham College 2020</h4>
-										<p class="card-text">We kicked off our first competition of the season at Durham College and
-											competed
-											against over 30 teams from all over Canada!</p>
-									</div>
-								</div>
-							</div>
-							<div class="carousel-item">
-								<div class="card w-100">
-									<img class="card-img-top lozad" data-src="images/events/elementary-school-3by2.jpg" alt="STEM outreach">
-									<div class="card-body">
-										<h4 class="card-title">STEM outreach</h4>
-										<p class="card-text">We went to local elementary schools to promote our school's STEM program, opportunities in the STEM industries and FIRST Robotics Competition. We brought our robot along with us to show to the students who seemed very interested and eager to learn more.</p>
-									</div>
-								</div>
-							</div>
-							<div class="carousel-item">
-								<div class="card w-100">
-									<img class="card-img-top lozad" data-src="images/events/eggtarts-compressed.jpg" alt="eggtarts">
-									<div class="card-body">
-										<h4 class="card-title">Autumnsfest 2019</h4>
-										<p class="card-text">We sold eggtarts to the student body and the community to promote STEM
-											education
-											and our team!</p>
-									</div>
-								</div>
-							</div>
-							<div class="carousel-item">
-								<div class="card w-100">
-									<img class="card-img-top lozad" data-src="images/events/first_meeting-compressed.jpg"
-										alt="first meeting">
-									<div class="card-body">
-										<h4 class="card-title">First Meeting September 2019</h4>
-										<p class="card-text">We introduced over 100 new members from our school to robotics and showed them
-											ways they can use their skills (non-technical and/or technical) to contribute to the team!</p>
-									</div>
-								</div>
-							</div>
-							<div class="carousel-item">
-								<div class="card w-100">
-									<img class="card-img-top lozad" data-src="images/events/mayfair-compressed.jpg" alt="mayfair">
-									<div class="card-body">
-										<h4 class="card-title">Mayfair 2019</h4>
-										<p class="card-text">During Unionville High School's annual Mayfair, we sold curry balls to raise
-											awareness of the importance of STEM education and introduced future members to our team!</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<a class="carousel-control-prev" href="#events-slides-mobile" role="button" data-slide="prev">
-							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="sr-only">Previous</span>
-							<div class></div>
-
-						</a>
-						<a class="carousel-control-next" href="#events-slides-mobile" role="button" data-slide="next">
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="sr-only">Next</span>
-							<div class></div>
-						</a>
-						<img class="load-early lozad" data-src="images/events/durham-compressed-vignette.jpg" alt="mayfair">
-						<img class="load-early lozad" data-src="images/events/first_meeting-compressed.jpg" alt="first_meeting">
-						<img class="load-early lozad" data-src="images/events/eggtarts-compressed.jpg" alt="eggtarts">
-						<img class="load-early lozad" data-src="images/events/mayfair-compressed.jpg" alt="team">
-					</div>
-				</div>
-				<!-- End Slideshow -->
-
-				<div class="row" data-uk-scrollspy="cls: uk-animation-fade; delay: 100;">
-					<div class="col-12 col-md-6 text-right sm-text-center sm-margin-bottom-10px sm-margin-top-30px">
-						<a class="btn btn-large btn-white border-radius-50"
-							href="events.html">More Events</a>
-					</div>
-					<div class="col-12 col-md-6 text-left sm-text-center">
-						<a class="btn btn-large btn-white border-radius-50"
-							href="gallery.html">More Pictures</a>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- End About -->
-
-		<!-- Start of Team picture -->
-		<div id="team">
-			<div class="container-fluid">
-				<!-- <div class="row" data-uk-scrollspy="cls: uk-animation-fade; delay: 100;">
-					<div class="col center-col margin-auto">
-					</div>
-				</div> -->
-
-				<!-- div to center the button -->
-				<!-- <div class="position-relative width-100 padding-bottom-30px page-title-smaller teambuttonsmallerscreen teambuttonlargerscreen" data-uk-scrollspy="cls: uk-animation-fade; delay: 100;"> -->
-				<!-- Button to redirect to team page -->
-				<!-- </div> -->
-				<div class="content-container">
-					<h3 class="section-title margin-bottom-10px" data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 500;">Meet The Team!</h3>
-					<a class="btn btn-medium btn-white border-radius-50 center-block sm-margin-left-right-auto sm-display-table sm-margin-bottom-10px "
-						href="team.html" data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 500;">Details On The Team</a>
-				</div>
-
-				<div class="row team-images" data-uk-scrollspy="cls: uk-animation-slide-left-medium;  target: > div; delay: 100;">
-
-
-					<div class="col-md-4 col-12">
-						<img class="regular-team-image lozad" data-src="images/group/2020-yearbook-exec.jpg">
-					</div>
-					<div class="col-md-4 col-12">
-						<img class="regular-team-image lozad" data-src="images/group/2020-yearbook-core.jpg">
-					</div>
-					<div class="col-md-4 col-12">
-						<img class="regular-team-image lozad" data-src="images/group/2020-yearbook-team.jpg">
-					</div>
-				</div>
-			</div>
-			<!-- End Container -->
-		</div>
-
-		<!--Start FIRST Section-->
-		<div id="first" class="first-section">
-			<div class="container" data-uk-scrollspy="cls: uk-animation-fade; delay: 100; target: > div ;"
-				class="padding-bottom-50px">
-
-				<!--Title-->
-				<div class="row">
-					<div class="col center-col margin-auto">
-						<h3 class="section-title">What is FIRST?</h3>
-					</div>
-				</div>
-
-				<!--Start Logo, Text and Button Area-->
-				<div class="row">
-					<!--FIRST Logo-->
-					<div class="col-md-6 col-xs-12 col-sm-12">
-						<img src="images/logo/FIRST_logo.png" class="first-logo">
-					</div>
-
-					<div class="col-md-6 col-xs-12 col-sm-12">
-						<!--Text About FIRST-->
-						<p class="first-text text-white">
-							"The mission of FIRST® is to inspire young people to be science and technology leaders and innovators, by
-							engaging them in exciting
-							mentor-based programs that build science, engineering, and technology skills, that inspire innovation, and
-							that foster well-rounded
-							life capabilities including self-confidence, communication, and leadership." <b> - FIRST</b></p>
-
-						<!--Link To Website-->
-						<a class="btn btn-medium btn-white border-radius-50 sm-margin-left-right-auto sm-display-table sm-margin-bottom-10px"
-							href="https://www.firstinspires.org/">Learn More about First</a>
-
-					</div>
-					<!--End Logo, Text and Button Area-->
-				</div>
-			</div>
-			<!--End of FIRST section-->
-		</div>
-
-		<!--start of sponsors-->
-
-		<!--start of diamond sponsors-->
-		<div class="sponsors diamond" id="sponsors">
-			<div id="diamond-particles">
-
-			</div>
-
-			<section class="scrollspy">
-				<div class="container">
-					<h2 data-uk-scrollspy="cls: uk-animation-fade; delay: 50;" class="section-title padding-top-bottom-30px">Many thanks to our sponsors!</h2>
-
-					<div class="row" data-uk-scrollspy="cls: uk-animation-fade; delay: 100;">
-						<div class="col center-col margin-auto">
-							<h4 class="section-title">Diamond Sponsors</h4>
-							<!-- Separator -->
-							<div class="separator">
-							</div>
-						</div>
-					</div>
-					<!--start of sponsor logos-->
-					<div
-						data-uk-scrollspy="cls: uk-animation-slide-top-medium; target: > .row > div > * ; delay: 50; repeat: false">
-						<div class="row sponsors-row">
-							<div class="col-md-4 col-sm-6 col-12">
-								<div class="padding-40px uk-box-shadow-small">
-									<img data-src="images/sponsors/yangu.jpg" alt="Yangu Financial Corporation" class="lozad" />
-								</div>
-							</div>
-							<div class="col-md-4 col-sm-6 col-12">
-								<a class="padding-40px uk-box-shadow-small" href="https://www.investorsgroup.com/en">
-									<img data-src="images/sponsors/igwealthlogo.jpg" alt="IG Wealth" class="lozad" />
-								</a>
-							</div>
-							<div class="col-md-4 col-sm-6 col-12">
-								<div class="padding-40px uk-box-shadow-small">
-									<img data-src="images/sponsors/uhs.png" alt="UHS Family and Friends" class="lozad" />
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-		</div>
-		<!--end of diamond sponsors-->
-
-		<!--start of platinum sponsors-->
-		<div class="sponsors platinum">
-			<div id="platinum-particles">
-
-			</div>
-			<section class="scrollspy">
-				<div class="container">
-					<div class="row" data-uk-scrollspy="cls: uk-animation-fade; delay: 100;">
-						<div class="col center-col margin-auto">
-							<h4 class="padding-top-40px section-title">Platinum Sponsor</h4>
-							<!-- Separator -->
-							<div class="separator">
-							</div>
-						</div>
-					</div>
-
-					<!--start of sponsor logos-->
-					<!-- Animation -->
-					<div
-						data-uk-scrollspy="cls: uk-animation-slide-top-medium; target: > .row > div > * ; delay: 50; repeat: false">
-						<div class="row sponsors-row">
-							<div class="col-md-4 col-sm-6 col-12">
-								<a class="padding-20px uk-box-shadow-small" href="https://www.argosyfnd.org/">
-									<img data-src="images/sponsors/argosy.png" alt="Argosy Foundation" class="lozad" />
-								</a>
-							</div>
-						</div>
-					</div>
-					<!-- End Animation -->
-				</div>
-			</section>
-		</div>
-		<!--end of platinum sponsors-->
-
-		<!--start of gold sponsors-->
-		<div class="sponsors gold">
-			<div id="gold-particles">
-
-			</div>
-			<section class="scrollspy">
-				<div class="container">
-					<div class="row" data-uk-scrollspy="cls: uk-animation-fade; delay: 100;">
-						<div class="col center-col margin-auto">
-							<h4 class="padding-top-40px section-title">Gold Sponsors</h4>
-							<!-- Separator -->
-							<div class="separator">
-							</div>
-						</div>
-					</div>
-
-					<!--start of sponsor logos-->
-					<!-- Animation -->
-					<div
-						data-uk-scrollspy="cls: uk-animation-slide-top-medium; target: > .row > div > * ; delay: 50; repeat: false">
-						<div class="row sponsors-row">
-							<div class="col-md-4 col-sm-6 col-6 ">
-								<a class="sm-padding-20px padding-40px uk-box-shadow-small" href="https://www.oxfordlearning.com/">
-									<img data-src="images/sponsors/oxfordunionville.svg" alt="Oxford Learning Unionville" class="lozad" />
-								</a>
-							</div>
-							<div class="col-md-4 col-sm-6 col-6 ">
-								<a class="sm-padding-20px padding-40px uk-box-shadow-small" href="https://www.markhamdistrictenergy.com/">
-									<img data-src="images/sponsors/MarkhamDistrictEnergy.jpg" alt="Markham District Energy"
-										class="lozad" />
-								</a>
-							</div>
-							<div class="col-md-4 col-sm-6 col-6 ">
-								<a class="sm-padding-20px padding-40px uk-box-shadow-small" href="https://www.svrobotics.ca/">
-									<img data-src="images/sponsors/svrobotics.jpeg" alt="SV Robotics Academy" class="lozad" />
-								</a>
-							</div>
-
-							<div class="col-md-4 col-sm-6 col-6 ">
-								<a class="sm-padding-20px padding-40px uk-box-shadow-small" href="https://www.pathcom.com/">
-									<img data-src="images/sponsors/pathway.png" alt="Pathway Communication" class="lozad" />
-								</a>
-							</div>
-
-							<div class="col-md-4 col-sm-6 col-6 ">
-								<a class="sm-padding-20px padding-40px uk-box-shadow-small" href="http://www.asapphysio.com/">
-									<img data-src="images/sponsors/asapphysio.png" alt="ASAP Physio" class="lozad" />
-								</a>
-							</div>
-
-							<div class="col-md-4 col-sm-6 col-6 ">
-								<div class="sm-padding-20px padding-40px uk-box-shadow-small">
-									<img data-src="images/sponsors/uhsalumni.png" alt="UHS Robotics Alumni" class="lozad" />
-								</div>
-							</div>
-
-							<div class="col-md-4 col-sm-6 col-6 ">
-								<a class="sm-padding-20px padding-40px uk-box-shadow-small" href="https://elasticcare.com/">
-									<img data-src="images/sponsors/ElasticCare.png" alt="Elastic Care" class="lozad" />
-								</a>
-							</div>
-
-							<div class="col-md-4 col-sm-6 col-6 ">
-								<a class="sm-padding-20px padding-40px uk-box-shadow-small" href="https://www.solidworks.com/">
-									<img data-src="images/sponsors/SOLIDWORKS.svg" alt="SOLIDWORKS" class="lozad" />
-								</a>
-							</div>
-						</div>
-					</div>
-					<!-- End Animation -->
-
-				</div>
-			</section>
-		</div>
-		<!--end of gold sponsors-->
-		<!--end of sponsors-->
-
-
-
-		<!--Footer to be filled in with javascript-->
-		<div id="contact">
-		</div>
-	</div>
-
-	<!-- jQuery Library -->
-	<script src="js/jquery.min.js"></script>
-
-	<!-- Lozad -->
-	<script src="js/lozad.min.js"></script>
-
-	<!-- Uikit Framework -->
-	<script src="js/uikit.min.js"></script>
-
-	<!-- Bootstrap Framework -->
-	<script src="js/bootstrap.min.js"></script>
-
-	<!-- Modernizr -->
-	<script src="js/modernizr.js"></script>
-
-	<!-- Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-
-	<!-- Pie Charts -->
-	<script src="js/jquery.easypiechart.min.js"></script>
-
-	<!-- Contact Form Validation -->
-	<script src="js/contact.js"></script>
-
-	<!-- Counter -->
-	<script src="js/jquery.countTo.js"></script>
-
-	<!-- Counter Loader -->
-	<script src="js/jquery.appear.js"></script>
-
-	<!-- Retina Ready -->
-	<script src="js/retina.min.js"></script>
-
-	<!-- Custom Scripts -->
-	<script src="js/custom/custom.js"></script>
-
-	<!-- Custom Scripts -->
-	<script src="js/custom/lozad.js"></script>
-
-	<!-- Custom Scripts -->
-	<!-- <script src="js/custom/scrollspy-class.js"></script> -->
+<body>
+ 
+<img src="https://www.uhsrobotics.org/images/logo/nav-logo.png" style="width:120px">
+<h1>We're no strangers to love<br>You know the rules and so do I</h1>
+<p>A full commitment's what I'm thinking of</p><br>
+<a href="https://cw168.github.io/index.html" target="_blank">Ha Ha Get Rick Rolled</a><br>
+<img src="https://media1.tenor.com/images/98befbb23d7c2c75a88062c333f605bb/tenor.gif?itemid=18229769" style="width:500px"><br>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<h2>Get Stick Bugged Lol </h2>
+<iframe width="500" height="315" src="https://www.youtube.com/embed/fC7oUOUEEi4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  
 
 </body>
-
 </html>
