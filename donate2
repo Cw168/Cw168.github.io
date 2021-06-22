@@ -5,6 +5,7 @@
 h1 {
   color: white;
   font-size: 125px;
+  font-align: center;
 }
   
 </style>
@@ -15,3 +16,4 @@ h1 {
 
 </body>
 </html>
+
