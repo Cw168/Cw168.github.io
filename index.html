@@ -10,7 +10,25 @@ body {
   background-repeat: no-repeat;
 }
 
+#background {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 10%;
+    background-image: url("https://arbordayblog.org/wp-content/uploads/2018/06/oak-tree-sunset-iStock-477164218.jpg");
+    z-index: 1;
+    background-size: 100%;
+}
 
+#content {
+    position: relative;
+    z-index: 2;
+    padding: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
 	
 body {
   background-color:white;
@@ -78,7 +96,6 @@ h5 {
 
 a:hover, a:active {
   background-color: transparent;
-  text-align: center;
 }
 }
   
@@ -210,6 +227,9 @@ a:hover, a:active {
 </style>
 </head>
 <body>
+	
+<div id="content">
+<div id="background">
 
 <div class="navbar">
   <div class="dropdown">
@@ -245,6 +265,7 @@ a:hover, a:active {
 <div class="gap2">
 </div>
 	<h5>Trees are the longest living organisms on Earth, and never die of old age. Their rings can predict climate change. Planting trees can help reduce your energy costs. Some trees have been to the moon. Trees are able to communicate and defend themselves against attacking insects.</h5>
+</div>
 </div>
 </div>
 </div>
